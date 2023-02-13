@@ -50,3 +50,9 @@ document.addEventListener("DOOMContentLoaded", () => {
     }
   ];
 });
+
+const cuadricula = document.querySelector(".cuadricula");
+const resultado = document.querySelector("#resultado");
+var cartasEscogidas = [];
+var cartasEscogidasId = [];
+var cartaGanadas = [];
