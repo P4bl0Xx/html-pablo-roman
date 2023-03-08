@@ -69,5 +69,16 @@ function crearTablero (){
     cuadricula.appendChild(carta); // Relaciona la carta creada con la variable cuadricula enlazada con la clase
                                    // cuadricula de html para que se imprima la carta creada en el div de html.
   }
+} 
+function voltearCarta() {
+  var carId = this.getAttribute("data-id");
+  cartasEscogidas.push(carAdj[cardId].name)
+  cartasEscogidasId.push(cardId)
+  this.setAttribute("src", cardAdj[cardId].img)
+if (cartasEscogidas.length === 2) {
+  setTimeout(verificarPareja, 1000);
+  }
 }
-});
+crearTablero();
+}); 
+
