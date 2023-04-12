@@ -97,10 +97,16 @@ function verificarPareja() {
      cards[opcionUnoId].removeEventListener("click", voltearCarta);
      cartasGanadas.push(cartasEscogidas);
 } else {
-  cards[]
-
-
+  cards[opcionUnoId].setAttribute("src", "images/reverso.png");
+  cards[opcionUnoId].setAttribute("src", "images/reverso.png");
+  alert("¡Intenta de nuevo!")
   }
+  cartasEscogidas = [];
+  cartasEscogidasId = [];
+
+  resultado.textContent = cartasGanadas.length;
+
+  if (cartasGanadas.length === cardsAdj.length;)
   function voltearCarta() {
     var cardId = this.getAttribute("data-id");
     cartasEscogidas.push(cardsAdj[cardId].name);
